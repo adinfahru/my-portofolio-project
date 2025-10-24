@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #111827;
+  text-align: center;
+}
+
+p {
+  color: #334155;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 20px;
+  gap: 10px;
+}
+
+#main {
+  max-width: 820px;
+  margin: 20px auto 40px auto;
+}
+
+#footer {
+  text-align: center;
+  padding: 18px 6px;
+  color: #475569;
+}
+
+.btn {
+  background: #07049dff;
+  padding: 6px;
+  color: white;
+}
+
+.card {
+  background: white;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 14px;
+}
+
+.text {
+  color: #334155;
+}
