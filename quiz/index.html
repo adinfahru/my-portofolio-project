@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1 id="quizTitle">Mini Quiz</h1>
+        </header>
+
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. Apakah HTML adalah bahasa pemrograman?</h3>
+                <label>
+                    <input type="radio" name="question1" value="a"> Ya
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="b"> Bukan
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="c"> Bisa jadi
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>2. Bahasa pemrograman apa yang maskotnya Uler?</h3>
+                <label>
+                    <input type="radio" name="question2" value="a"> Python
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="b"> JavaScript
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="c"> C++
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>3. Tag HTML untuk membuat tautan adalah?</h3>
+                <label>
+                    <input type="radio" name="question3" value="a"> &lt;link&gt;
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="b"> &lt;a&gt;
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="c"> &lt;href&gt;
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>4. Apa singkatan dari CSS?</h3>
+                <label>
+                    <input type="radio" name="question4" value="a"> Computer Style Sheets
+                </label>
+                <label>
+                    <input type="radio" name="question4" value="b"> Creative Style System
+                </label>
+                <label>
+                    <input type="radio" name="question4" value="c"> Cascading Style Sheets
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>5. Versi kontrol yang digunakan untuk kolaborasi adalah?</h3>
+                <label>
+                    <input type="radio" name="question5" value="a"> Git
+                </label>
+                <label>
+                    <input type="radio" name="question5" value="b"> Docker
+                </label>
+                <label>
+                    <input type="radio" name="question5" value="c"> NPM
+                </label>
+            </div>
+
+            <div class="question" id="bonusQuestion" style="display: none;">
+                <h3>Siapa nama presiden Indonesia sekarang?</h3>
+                <label>
+                    <input type="radio" name="bonus" value="a"> Pak Mulyono 
+                </label>
+                <label>
+                    <input type="radio" name="bonus" value="b"> Pak Prabskuy
+                </label>
+                <label>
+                    <input type="radio" name="bonus" value="c"> Mas An1es
+                </label>
+                <label>
+                    <input type="radio" name="bonus" value="e"> Mas Gibran (19 juta lapangan pekerjaan)
+                </label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="button" id="restartBtn" style="display: none;">Mulai Ulang</button>
+            </div>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <div id="darkModeBtn">🌙</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
